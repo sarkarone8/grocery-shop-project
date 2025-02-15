@@ -4,9 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Groceryfy</title>
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <!-- fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind -->
+      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+      <!-- favicon -->
+       <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
+
+      <style>
+        .sora-font {
+          font-family: "Sora", serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+        }
+      </style>
 </head>
-<body>
-  
-  
+<body class="sora-font">
+  <!-- header section -->
+  <header class="container bg-gradient-to-t from-[#EFEBE3] mb-12 lg:mb-32">
+    <nav class="mx-auto lg:w-[80%] lg:pt-5">
+      <!-- mobile navigation bar -->
+      <div class="mobile-nav-bar flex justify-between lg:hidden mb-12 lg:mb-32 px-4 border border-[#179800] bottom-2">
+        <div class="nav-logo py-4">
+          <img src="assets/logo-header.png" alt="mobile-logo" />
+        </div>
+        <div class="nav-manu py-4">
+          <i class="text-[#179800] text-4xl fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <!--Mobile navigation end-->
+      <div class="nav-bar lg:flex justify-between items-center mb-24 hidden">
+        <div class="nav-logo">
+          <img class="w-[150px]" src="assets/logo-header.png" alt="header logo" />
+        </div>
+        <ul class="flex gap-8">
+          <li><a class="text-lg" href="#">Product</a></li>
+          <li><a class="text-lg" href="#">Services</a></li>
+          <li><a class="text-lg" href="#">Contact us</a></li>
+        </ul>
+        <div class="nav-btn-section flex items-center gap-8">
+          <i class="text-lg fa-solid fa-magnifying-glass"> </i>
+          <i class="text-lg fa-solid fa-cart-shopping"></i>
+          <button class="px-[30px] py-[10px] text-lg rounded-lg border border-[#179800] hover:bg-slate-400">
+            Login
+          </button>
+          <button class="px-[30px] py-[10px] text-lg rounded-lg border border-[#179800] bg-[#179800] hover:bg-slate-400">
+            Register
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section w-[90%] mx-auto flex flex-col justify-center items-center gap-8">
+      <div class="hero-section-titile flex flex-col justify-center items-center h-56">
+        <h2 class="text-center font-semibold text-3xl lg:text-6xl ">
+          <span class="text-[green]">Freshness</span>
+          <span class=" ">You Can <br />Count</span>
+          On, Prices You’ll <span class="">Love</span>!
+        </h2>
+        <p class="text-center mt-8 font-normal lg:text-lg text-[gray]">
+          Shop your daily essentials at unbeatable prices. From fresh produce
+          to pantry <br />
+          staples, we’ve got you covered every day!
+        </p>
+      </div>
+      <div class="banner-img lg:w-[900px]">
+        <img class="w-full" src="assets/hero-vegetables.png" alt="" />
+      </div>
+    </div>
+  </header>
+  <!-- main section -->
+ <main>
+
+ </main>
+<footer>
+
+</footer>
 </body>
 </html>
